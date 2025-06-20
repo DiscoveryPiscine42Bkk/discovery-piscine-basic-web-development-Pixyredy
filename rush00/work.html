@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VS Code Team - Main Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .vscode-bg {
+            background-color: #1e1e1e;
+        }
+        .editor-bg {
+            background-color: #252526;
+        }
+        .tab-bg {
+            background-color: #2d2d2d;
+        }
+        .sidebar-bg {
+            background-color: #333333;
+        }
+        .blue-highlight {
+            color: #4fc3f7;
+        }
+        .code-font {
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .file-explorer-item:hover {
+            background-color: #2a2d2e;
+        }
+        .active-tab {
+            background-color: #1e1e1e !important;
+            border-top: 2px solid #007acc;
+        }
+    </style>
+</head>
+<body class="vscode-bg text-gray-300 min-h-screen flex flex-col">
+    <!-- Main Container (VS Code Window) -->
+    <div class="flex flex-col h-screen">
+        <!-- Activity Bar (Left) - Vertical -->
+        <div class="flex flex-row flex-1 overflow-hidden">
+            <div class="sidebar-bg w-16 flex flex-col items-center py-4 space-y-6">
+                <div class="p-3 rounded-lg bg-blue-900/30 text-blue-400">
+                    <i class="fas fa-code text-xl"></i>
+                </div>
+                <div class="p-3 hover:bg-blue-900/20 rounded-lg text-gray-400 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-user-friends text-xl"></i>
+                </div>
+                <div class="p-3 hover:bg-blue-900/20 rounded-lg text-gray-400 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-book text-xl"></i>
+                </div>
+                <div class="p-3 hover:bg-blue-900/20 rounded-lg text-gray-400 hover:text-blue-400 cursor-pointer">
+                    <i class="fas fa-cog text-xl"></i>
+                </div>
+            </div>
+
+            <!-- Sidebar (File Explorer) -->
+            <div class="sidebar-bg w-64 flex flex-col border-r border-gray-700">
+                <div class="p-3 text-gray-400 flex items-center justify-between">
+                    <span class="font-semibold">MY RUSH PRPJECT</span>
+                    <i class="fas fa-ellipsis-h cursor-pointer"></i>
+                </div>
+                <div class="py-2">
+                    <div class="file-explorer-item flex items-center px-4 py-1 cursor-pointer hover:bg-blue-900/20">
+                        <i class="fas fa-folder-open text-blue-500 mr-2"></i>
+                        <span class="text-sm">TEAM_PROFILES</span>
+                    </div>
+                    <div class="file-explorer-item flex items-center px-4 py-1 cursor-pointer hover:bg-blue-900/20">
+                        <i class="fas fa-file-alt text-blue-300 mr-2"></i>
+                        <span class="text-sm">about_EDU</span>
+                    </div>
+                    <div class="file-explorer-item flex items-center px-4 py-1 cursor-pointer hover:bg-blue-900/20">
+                        <i class="fas fa-file-alt text-blue-300 mr-2"></i>
+                    </div>
+                </div>
+                <div class="mt-4 p-3 text-gray-400">
+                    <span class="font-semibold">We are glad to meet you.</span>
+                </div>
+            </div>
+
+            <!-- Main Editor Area -->
+            <div class="editor-bg flex-1 flex flex-col overflow-hidden">
+                <!-- Editor Tabs -->
+                <div class="tab-bg flex border-b border-gray-700">
+                    <div class="active-tab px-4 py-2 flex items-center cursor-pointer">
+                        <i class="fas fa-home text-blue-400 mr-2"></i>
+                        <span>HOME</span>
+                        <i class="fas fa-times ml-2 text-gray-500 hover:text-white"></i>
+                    </div>
+                </div>
+
+                <!-- Editor Content -->
+                <div class="flex-1 p-6 overflow-y-auto">
+                    <div class="max-w-4xl mx-auto">
+                        <h1 class="text-4xl font-bold text-blue-400 mb-6">
+                            <span class="blue-highlight">//</span> We will make you know us better.
+                        </h1>
+
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-user text-blue-400 text-2xl mr-3"></i>
+                                    <h2 class="text-xl font-semibold">Patcharee Singkham</h2>
+                                </div>
+                                <p class="text-gray-400 mb-4">ฺB 3/05/2007 18y</p>
+                                <p class="text-gray-400 text-sm mb-4 line-clamp-3">Happiness depends upon ourselves. 
+                                    ความสุขขึ้นอยู่กับตัวเราเอง</p>
+                                <a href="https://www.instagram.com/85earn?igsh=YmxybDg5Mmc1N3Zi" class="text-blue-400 hover:underline inline-flex items-center">
+                                    Contact me<i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+
+                            <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700 hover:border-blue-400 transition-all">
+                                <div class="flex items-center mb-4">
+                                    <i class="fas fa-user text-blue-400 text-2xl mr-3"></i>
+                                    <h2 class="text-xl font-semibold">Bunsita Oareevong</h2>
+                                </div>
+                                <p class="text-gray-400 mb-4">ฺB 23/05/2006 19y</p>
+                                <p class="text-gray-400 text-sm mb-4 line-clamp-3">Desperation fuels inspiration. 
+                                    ความสิ้นหวังจะทำให้เกิดแรงบันดาลใจ </p>
+                                <a href="https://www.instagram.com/msvsxyy?igsh=cWRibnJwdDFubXFp" class="text-blue-400 hover:underline inline-flex items-center">
+                                    Contact me <i class="fas fa-arrow-right ml-2"></i>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="bg-gray-800/50 p-6 rounded-lg border border-gray-700">
+                            <h2 class="text-xl font-semibold mb-4 flex items-center">
+                                <i class="fas fa-users mr-2 text-blue-400"></i> Bachelor of Science in Industrial Education 
+                                Program in Design Education
+                            </h2>
+                            <p class="text-gray-400 mb-4">
+                                 เน้นการศึกษาและสร้างสรรค์ผลิตภัณฑ์ที่ผสมผสานความงามและฟังก์ชันการใช้งานเข้าด้วยกัน 
+                                 ผู้เรียนจะได้เรียนรู้เกี่ยวกับกระบวนการออกแบบผลิตภัณฑ์ตั้งแต่การวิจัย ความคิดสร้างสรรค์ 
+                                 จนถึงการพัฒนาผลิตภัณฑ์ที่ตอบสนองต่อความต้องการของผู้บริโภค มุ่งเน้นให้ผู้เรียนสามารถ
+                                 ใช้นวัตกรรมและเทคโนโลยีสมัยใหม่ในการพัฒนาผลิตภัณฑ์ที่มีประสิทธิภาพและยั่งยืน
+                            </p>
+                            <div class="flex space-x-3 mt-4">
+                                <a href="https://siet.kmitl.ac.th/node/724" class="text-blue-400 hover:underline inline-flex items-center">
+                                    My Contact University <i class="fas fa-arrow-right ml-2"></i>
+                                <div class="px-3 py-1 bg-blue-900/30 text-blue-400 rounded-full text-sm">HTML</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status Bar -->
+                <div class="tab-bg px-4 py-2 flex items-center justify-between text-xs border-t border-gray-700">
+                    <div class="flex space-x-4">
+                        <span class="text-green-400"><i class="fas fa-circle mr-1"></i> Live Server</span>
+                        <span>UTF-8</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="flex space-x-4">
+                        <span>Ln 1, Col 1</span>
+                        <span>Spaces: 4</span>
+                        <span><i class="fas fa-bolt text-yellow-400 mr-1"></i> Ready</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
